@@ -1,14 +1,34 @@
-### Xiang Li — game designer, systems and tooling
+### Xiang Li — music AI, systems and tooling
 
-I design game systems and build the tools around them: the rules, the numbers, the editors other people author
-content with, and the checks that tell me whether any of it works.
+I build systems that turn music into data you can check, and the tools around them: a transcription
+pipeline, the validator that says which grid a song can be trusted on, and the annotation app I listen with.
+
+**Now: AI4Music / Workbench.** The aim is one representation of a song — chords, bass, melody, rhythm,
+part activity and playing technique all mapped onto a single discrete time axis — and then to find
+structure in it (sections, boundaries, transitions) without supervision.
+
+- **Workbench** — audio → beat/downbeat grid (Beat This!, madmom, Mapperatorinator, human taps) →
+  note layers (bass, guitar, piano, drums, vocals, each from whichever open model survives listening
+  tests) → chords, keys, structure.
+- **MGMCS validator** — per-song timing admission: which grid readings still stand, and which ranges
+  have to be treated with caution. Downstream reads this verdict; it does not re-decide it.
+- **listening-ai** — Android annotation app: on-device musicnn chord recognition plus a local Qwen
+  sidecar, for listening passes and label fixes.
+- **Research** — masked reconstruction on a self-built 300–400 song corpus, audio-derived layers
+  measured against a MIDI ceiling, and how much of the gap is label noise rather than model capacity.
+
+Two rules I keep: the ears decide and metrics only size the effect; and a rule is either applied to
+the whole library or dropped — no per-song hand-tuning.
+
+Before this: game design — the rules, the numbers, the editors other people author content with, and
+the checks that tell me whether any of it works.
 
 Currently finishing an MSc in Business Administration (International Business) at the University of Amsterdam.
 Before that: equipment and gem systems at SAGI Games, production coordination and build testing at TAIKO Studios,
 localization QA at MPMF.
 
-**Looking for:** a six-month internship from February 2027 in Amsterdam — game design, systems design, or
-technical design. 32 hours per week alongside my studies.
+**Looking for:** a six-month internship from February 2027 in Amsterdam — game design, systems design,
+technical design, or music-AI tooling and research engineering. 32 hours per week alongside my studies.
 
 ---
 
