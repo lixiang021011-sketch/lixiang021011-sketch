@@ -36,7 +36,9 @@ technical design, or music-AI tooling and research engineering. 32 hours per wee
 
 | Project | What it is | Status |
 | --- | --- | --- |
-| **[FallenAngel](https://github.com/lixiang021011-sketch/FallenAngel)** | Roguelike rhythm game: songs are encounters inside a run rather than trophies you retire, and you perform one instrument's part of each song | Playable; content and the build layer next |
+| **[FallenAngel](https://github.com/lixiang021011-sketch/FallenAngel)** | Portrait falling-note roguelike: a run is a route map of songs, and you play one instrument's part of each song — charts are converted from real sheet music (MusicXML), not charted by ear | Playable loop; chart pipeline and content next |
+| **[listening-ai](https://github.com/lixiang021011-sketch/listening-ai)** | Android listening/annotation app: on-device musicnn chord recognition plus a local Qwen sidecar; annotate while the track plays | Working app; annotation pass ongoing |
+| **[mgmcs-validator](https://github.com/lixiang021011-sketch/mgmcs-validator)** | Per-song timing admission: which grid readings a song can be trusted on, which ranges need caution, which readings are out — with 242 calibration documents as demo data | In use as the gate for the transcription pipeline |
 | **[StylesVN](https://github.com/lixiang021011-sketch/StylesVN)** | Visual-novel pipeline where the script is data — 9 chapters, 495 staged instructions, validated and self-tested by one command | In progress |
 | **Game Forge** | Zero-dependency local dashboard that runs my projects and turns each one's README and Git state into the next three steps | 11 automated tests |
 | **Bell Garden** | Metroidvania vertical slice: abilities that open the map, enemies that read the player, a three-phase boss | In progress |
